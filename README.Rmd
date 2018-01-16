@@ -1,7 +1,7 @@
 ---
 output: github_document
 ---
-
+[![Travis-CI Build Status](https://travis-ci.org/CannaData/fullcalendarWidget.svg?branch=master)](https://travis-ci.org/CannaData/fullcalendarWidget)
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
 ```{r, echo = FALSE}
