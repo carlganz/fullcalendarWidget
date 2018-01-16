@@ -10,6 +10,22 @@
 #'   \code{'400px'}, \code{'auto'}) or a number, which will be coerced to a
 #'   string and have \code{'px'} appended.
 #' @param elementId Use an explicit element ID for the widget (rather than an automatically generated one). Useful if you have other JavaScript that needs to explicitly discover and interact with a specific widget instance.
+#' @examples
+#' \dontrun{
+#' # blank calender of current month
+#' fullcalendar()
+#'
+#' # with events
+#' fullcalendar(events = data.frame(title = "Event", date = Sys.Date()))
+#'
+#' # with options and callbacks
+#' fullcalendar(options = list(header = list(left = "", center = "", right = "prev,next")),
+#'              callbacks = list(dayClick = DT::JS(
+#'              "function(date, jsEvent, view) {
+#'                alert(date.format());
+#'              }"
+#'              )))
+#' }
 #' @export
 fullcalendar <- function(events = NULL, options = NULL, callbacks = NULL, width = NULL, height = NULL, elementId = NULL) {
   # create widget

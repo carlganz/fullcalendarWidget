@@ -26,3 +26,20 @@ Generate calendar
 \note{
 Documentation for options and callbacks is available at \url{https://fullcalendar.io/docs/}
 }
+\examples{
+\dontrun{
+# blank calender of current month
+fullcalendar()
+
+# with events
+fullcalendar(events = data.frame(title = "Event", date = Sys.Date()))
+
+# with options and callbacks
+fullcalendar(options = list(header = list(left = "", center = "", right = "prev,next")),
+             callbacks = list(dayClick = DT::JS(
+             "function(date, jsEvent, view) {
+               alert(date.format());
+             }"
+             )))
+}
+}
