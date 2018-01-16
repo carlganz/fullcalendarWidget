@@ -1,0 +1,14 @@
+Package: fullcalendarWidget
+Type: Package
+Title: Interactive Calendar for 'Shiny'
+Version: 0.1.0
+Authors@R: c(
+  person("Carl", "Ganz", email = "carl@cannadatasolutions", role = c("aut", "cre")),
+  person("CannaData Solutions", role = "cph"),
+  person("Adam", "Shaw", role = "cph", comment = "fullcalendar in javascript/fullcalendar")
+  )
+Description: Wrapper for the 'fullcalendar' JS library. Interactive calendar for 'Shiny' applications.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1

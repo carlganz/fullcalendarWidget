@@ -1,0 +1,14 @@
+dependencies:
+- name: jquery
+  src: htmlwidgets/lib/jquery
+  script: dist/jquery.min.js
+  version: 0.0.0
+- name: moment
+  src: htmlwidgets/lib/moment
+  script: moment.js
+  version: 0.0.0
+- name: fullcalendar
+  src: htmlwidgets/lib/fullcalendar
+  script: dist/fullcalendar.min.js
+  style: dist/fullcalendar.min.css
+  version: 0.0.0
