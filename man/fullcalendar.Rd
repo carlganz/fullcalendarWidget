@@ -23,3 +23,6 @@ string and have \code{'px'} appended.}
 \description{
 Generate calendar
 }
+\note{
+Documentation for options and callbacks is available at \url{https://fullcalendar.io/docs/}
+}

@@ -4,6 +4,7 @@
 #' @param events data.frame where each row is a event object, see \url{https://fullcalendar.io/docs/event_data/Event_Object/}
 #' @param options list of options, see notes
 #' @param callbacks list of JavaScript callback functions. Must wrap JavaScript with \code{htmlwidgets::JS}
+#' @note Documentation for options and callbacks is available at \url{https://fullcalendar.io/docs/}
 #' @import htmlwidgets jsonlite
 #' @param width,height Must be a valid CSS unit (like \code{'100\%'},
 #'   \code{'400px'}, \code{'auto'}) or a number, which will be coerced to a
