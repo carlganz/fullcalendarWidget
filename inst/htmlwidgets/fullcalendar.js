@@ -6,23 +6,30 @@ HTMLWidgets.widget({
 
   factory: function(el, width, height) {
 
-    // TODO: define shared variables for this instance
+    var calendar = null;
 
     return {
 
       renderValue: function(x) {
+        // fullCalendar doesn't accept width
         x.height = height;
         // make row a JS object so essentially a list of rows rather than default list of cols
         x.events = HTMLWidgets.dataframeToD3(x.events);
-        // TODO: code to render the widget, e.g.
-        $(el).fullCalendar(x);
+
+        calendar = $(el);
+        // apparently destroying and rebuilding calendar each time data changes is significantly easier than using changeEvents
+        if (calendar !== null) {
+          calendar.fullCalendar("destroy");
+        }
+
+        calendar.fullCalendar(x);
+        clientEvents = calendar.fullCalendar("clientEvents");
 
       },
 
       resize: function(width, height) {
-
-        // TODO: code to re-render the widget with a new size
-        $(el).fullCalendar('option', {
+        // fullCalendar doesn't accept width parameter
+        calendar.fullCalendar('option', {
           height: height
         });
       }
