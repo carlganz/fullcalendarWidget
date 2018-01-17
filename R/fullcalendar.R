@@ -12,7 +12,7 @@
 #' @param elementId Use an explicit element ID for the widget (rather than an automatically generated one). Useful if you have other JavaScript that needs to explicitly discover and interact with a specific widget instance.
 #' @examples
 #' \dontrun{
-#' # blank calender of current month
+#' # blank calendar of current month
 #' fullcalendar()
 #'
 #' # with events

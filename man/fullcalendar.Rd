@@ -28,7 +28,7 @@ Documentation for options and callbacks is available at \url{https://fullcalenda
 }
 \examples{
 \dontrun{
-# blank calender of current month
+# blank calendar of current month
 fullcalendar()
 
 # with events
